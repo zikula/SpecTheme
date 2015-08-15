@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div id="theme_leftcol" class="col-sm-4">
+            <h3>Block Content</h3>
+            {{ showblockposition('left') }}
+            <em>End Block Content</em>
+        </div>
+        <div id="theme_maincontent" class="col-sm-8">
+            {{ showblockposition('center') }}
+            {{ maincontent|raw }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+{
+    "name": "zikula/spectheme-theme",
+    "version": "2.0.0-beta",
+    "description": "A theme depicting the Core-2.0.0 Theme specification.",
+    "type": "zikula-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zikula Team",
+            "homepage": "http://zikula.org/"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Zikula\\SpecTheme\\": "" }
+    },
+    "require": {
+        "php": ">=5.4.1"
+    },
+    "extra": {
+        "zikula" : {
+            "core-compatibility": ">=1.4.1",
+            "class": "Zikula\\SpecTheme\\ZikulaSpecTheme",
+            "displayname": "SpecTheme",
+            "capabilities": {
+              "user": true,
+              "admin": true,
+              "xhtml": true,
+              "twig": true
+            }
+        }
+    }
+}

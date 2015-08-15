@@ -1,0 +1,39 @@
+# patterns are matched in order. the first match will alwasy be used
+# therefore, more specific definitions must be higher than general definitions
+# patterns are regex and will match path, then route, then module
+# any block positions in the template must be defined here
+# do not duplicate realm names or later entries will override previous entries
+master: # the master realm is required
+  page: ":master.html.twig"
+  block:
+    positions:
+      left: "Blocks:block.html.twig"
+    types:
+    instances:
+home:
+  pattern: ^/$ #required home pattern (`$` indicates end of path)
+  page: ":home.html.twig"
+  block:
+    positions:
+      left: "Blocks:block.html.twig"
+      center: "Blocks:block.html.twig"
+    types:
+    instances:
+admin: # defining an admin realm will be used when AdminResponse is sent (even w/o pattern)
+  pattern: /admin # typical pathname pattern (matches `/admin` anywhere in the path) - useful to also use to match BC
+  page: ":admin.html.twig"
+pagesdisplay:
+  pattern: zikulapagesmodule_user_display # routeid pattern
+  page: ":pagesdisplay.html.twig"
+pages:
+  pattern: ^/pages # carat inidicates path matches only paths *beginning with* `/pages`
+  page: ":pages.html.twig"
+  block:
+    positions:
+      left: "Blocks:block.html.twig"
+spec:
+  pattern: ZikulaSpecModule # modulename pattern (case insensitive)
+  page: ":spec.html.twig"
+  block:
+    positions:
+      left: "Blocks:block.html.twig"
