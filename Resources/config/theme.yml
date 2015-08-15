@@ -7,7 +7,7 @@ master: # the master realm is required
   page: ":master.html.twig"
   block:
     positions:
-      left: "Blocks:block.html.twig"
+      left: "Block:block.html.twig"
     types:
     instances:
 home:
@@ -15,8 +15,8 @@ home:
   page: ":home.html.twig"
   block:
     positions:
-      left: "Blocks:block.html.twig"
-      center: "Blocks:block.html.twig"
+      left: "Block:block.html.twig"
+      center: "Block:block.html.twig"
     types:
     instances:
 admin: # defining an admin realm will be used when AdminResponse is sent (even w/o pattern)
@@ -30,10 +30,10 @@ pages:
   page: ":pages.html.twig"
   block:
     positions:
-      left: "Blocks:block.html.twig"
+      left: "Block:block.html.twig"
 spec:
   pattern: ZikulaSpecModule # modulename pattern (case insensitive)
   page: ":spec.html.twig"
   block:
     positions:
-      left: "Blocks:block.html.twig"
+      left: "Block:block.html.twig"

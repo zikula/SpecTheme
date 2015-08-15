@@ -1,0 +1,2 @@
+The `/views` directory contains all the twig templates to be used by the theme. A specific template structure is
+not required, but standard Symfony structure is recommended and the structure should only be two layers deep.
