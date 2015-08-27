@@ -19,7 +19,7 @@ home:
       center: "Block:block.html.twig"
     types:
     instances:
-admin: # defining an admin realm will be used when AdminResponse is sent (even w/o pattern)
+admin: # defining an admin realm will be used when @Admin annotation is detected in the method (even w/o pattern)
   pattern: /admin # typical pathname pattern (matches `/admin` anywhere in the path) - useful to also use to match BC
   page: ":admin.html.twig"
 pagesdisplay:
