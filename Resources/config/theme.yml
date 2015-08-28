@@ -19,14 +19,14 @@ home:
       center: "Block:block.html.twig"
     types:
     instances:
-admin: # defining an admin realm will be used when @Admin annotation is detected in the method (even w/o pattern)
+admin: # defining an admin realm will be used when @Theme('admin') annotation is detected in the method (even w/o pattern)
   pattern: /admin # typical pathname pattern (matches `/admin` anywhere in the path) - useful to also use to match BC
   page: ":admin.html.twig"
 pagesdisplay:
   pattern: zikulapagesmodule_user_display # routeid pattern
   page: ":pagesdisplay.html.twig"
 pages:
-  pattern: ^/pages # carat inidicates path matches only paths *beginning with* `/pages`
+  pattern: ^/pages # carat indicates path matches only paths *beginning with* `/pages`
   page: ":pages.html.twig"
   block:
     positions:
