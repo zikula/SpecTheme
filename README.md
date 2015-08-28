@@ -51,3 +51,17 @@ SpecTheme/
     composer.json (required)
     phpunit.xml.dist
 ```
+
+### Resource Overrides
+#### Theme Resource Overrides
+Zikula allows templates and other resources to be overridden from within the theme Bundle. Please see 
+[the Resources directory](Resources/README.md) for more information.
+
+#### System Resource Overrides
+Symfony has a system in place to override Resources of any Bundle. See 
+[Overriding Resources](http://symfony.com/doc/current/cookbook/bundles/inheritance.html#overriding-resources-templates-routing-etc)
+**Note that in Zikula, System Resource overrides take precedence over Theme Resource overrides.**
+
+##### Override references
+ - see \Zikula\Bundle\CoreBundle\EventListener\ThemeListener::setUpThemePathOverrides (for @ZikulaFoo/Bar/index.html.twig type notation)
+ - see \Zikula\Bundle\CoreBundle\HttpKernel\ZikulaKernel::locateResource (for ZikulaFooBundle:Bar:index.html.twig type notation)
