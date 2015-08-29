@@ -3,25 +3,6 @@
 # patterns are regex and will match path, then route, then module
 # any block positions in the template must be defined here
 # do not duplicate realm names or later entries will override previous entries
-master: # the master realm is required
-  page: ":master.html.twig"
-  block:
-    positions:
-      left: "Block:block.html.twig"
-    types:
-    instances:
-home:
-  pattern: ^/$ #required home pattern (`$` indicates end of path)
-  page: ":home.html.twig"
-  block:
-    positions:
-      left: "Block:block.html.twig"
-      center: "Block:block.html.twig"
-    types:
-    instances:
-admin: # defining an admin realm will be used when @Theme('admin') annotation is detected in the method (even w/o pattern)
-  pattern: /admin # typical pathname pattern (matches `/admin` anywhere in the path) - useful to also use to match BC
-  page: ":admin.html.twig"
 pagesdisplay:
   pattern: zikulapagesmodule_user_display # routeid pattern
   page: ":pagesdisplay.html.twig"
@@ -37,3 +18,22 @@ spec:
   block:
     positions:
       left: "Block:block.html.twig"
+admin: # defining an admin realm will be used when @Theme('admin') annotation is detected in the method (even w/o pattern)
+  pattern: /admin # typical pathname pattern (matches `/admin` anywhere in the path) - useful to also use to match BC
+  page: ":admin.html.twig"
+home:
+  pattern: ^/$ #required home pattern (`$` indicates end of path)
+  page: ":home.html.twig"
+  block:
+    positions:
+      left: "Block:block.html.twig"
+      center: "Block:block.html.twig"
+    types:
+    instances:
+master: # the master realm is required
+  page: ":master.html.twig"
+  block:
+    positions:
+      left: "Block:block.html.twig"
+    types:
+    instances:
