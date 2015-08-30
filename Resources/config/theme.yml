@@ -1,4 +1,4 @@
-# patterns are matched in order. the first match will alwasy be used
+# patterns are matched in order. the first match will always be used
 # therefore, more specific definitions must be higher than general definitions
 # patterns are regex and will match path, then route, then module
 # any block positions in the template must be defined here
@@ -18,11 +18,12 @@ spec:
   block:
     positions:
       left: "Block:block.html.twig"
+##
+# 'alias' realms ('admin', 'home', and 'master') do not require a pattern and override all other realms
+##
 admin: # defining an admin realm will be used when @Theme('admin') annotation is detected in the method (even w/o pattern)
-  pattern: /admin # typical pathname pattern (matches `/admin` anywhere in the path) - useful to also use to match BC
   page: ":admin.html.twig"
-home:
-  pattern: ^/$ #required home pattern (`$` indicates end of path)
+home: # defining a home realm will be used when the Front Controller is used (e.g. the path is essentially `/`)
   page: ":home.html.twig"
   block:
     positions:
