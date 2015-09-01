@@ -1,8 +1,15 @@
        <div class="container">
-            <hr />
-            <footer>
-                <p>{{ __("Powered by") }} <a href="http://zikula.org">Zikula</a></p>
-            </footer>
+           <hr />
+           <footer>
+               <p>{{ __("Powered by") }} <a href="http://zikula.org">Zikula</a></p>
+           </footer>
+           <div>
+               <strong>Function, variable and filter demo:</strong><br />
+               {% set secondNumber = 4 %}
+               The sum of 5 and {{ secondNumber }} is <strong>{{ sum(5,secondNumber) }}</strong>.<br />
+               The string 'abc' with a prefix is <strong>{{ 'abc'|specPrefix }}</strong>.
+           </div>
+
        </div> <!-- /container -->
     </body>
 </html>

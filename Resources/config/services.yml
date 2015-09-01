@@ -1,0 +1,5 @@
+services:
+    zikula_spec_theme.twig.spectheme_extension:
+        class: Zikula\SpecTheme\Twig\SpecThemeExtension
+        tags:
+            - { name: twig.extension }

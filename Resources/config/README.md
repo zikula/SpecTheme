@@ -15,3 +15,13 @@ Two additional 'alias' realms may be defined and neither requires a pattern:
 Any block positions in the page's template must be defined here.
 
 Do not duplicate realm names or later entries will override previous entries
+
+-----
+
+Filename: `services.yml`
+
+Status: Optional
+
+Description: The DependencyInjection component of Symfony can be quite complex. Several filetypes can be used
+(.yml, .xml, etc). Please see the symfony documentation for further information.
+http://symfony.com/doc/current/components/dependency_injection/index.html

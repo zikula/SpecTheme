@@ -16,12 +16,13 @@ SpecTheme/
     Controller/
         FooController.php
     DependencyInjection/
-        ZikulaSpecExtension.php (required if services are used)
+        SpecThemeExtension.php (required if services are used)
     Listener/
         FooListener.php
     Resources/
         config/
             theme.yml (required)
+            services.yml (required if services are used)
         docs/
             index.rst
         meta/
@@ -44,6 +45,8 @@ SpecTheme/
             admin.html.twig
             home.html.twig
             master.html.twig
+    Twig/
+        SpecThemeExtension.php (required to create filters and functions)
     vendor/
     ZikulaSpecTheme.php (required)
     CHANGELOG.md
