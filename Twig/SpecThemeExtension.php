@@ -55,7 +55,7 @@ class SpecThemeExtension extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            'sum' => new \Twig_Function_Method($this, 'sum'),
+            new \Twig_SimpleFunction('sum', [$this, 'sum']),
         );
     }
 
