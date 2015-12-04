@@ -1,6 +1,11 @@
 ZikulaSpecTheme
 ============
 
+### Warning
+
+Installing this theme **and** the ZikulaSpecModule creates a conflict in the container due to their similar names.
+Themes are always "installed" so you must remove the theme in order for the module to function properly.
+
 ### Beta (for discussion)
 
 This is a theme depicting the Core-2.0.0 Theme specification.
