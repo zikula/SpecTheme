@@ -26,4 +26,3 @@ Please see the [Official JSON Schema](https://getcomposer.org/doc/04-schema.md) 
          - user: true|false
          - admin: true|false
          - xhtml: true|false
-         - twig: true|false
