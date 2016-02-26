@@ -1,3 +1,5 @@
+[![StyleCI](https://styleci.io/repos/40787912/shield)](https://styleci.io/repos/40787912)
+
 ZikulaSpecTheme
 ============
 
